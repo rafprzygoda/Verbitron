@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway')
+
+/* Variables*/
+
+$grid-columns: 12
+
+/* Main code */
+
+* 
+    box-sizing: border-box
+
+@mixin clearfix()
+    &:before,
+    &:after 
+        content: ""
+        display: table
+	
+    &:after 
+        clear: both
+		
+.row 
+    @include clearfix()
+	 
+[class*="col-"] 
+    float: left
+    min-height: 1px
+    padding: 0px
+    
+.hero
+    p
+        text-align: center
+    
+/* RWD */
+
+@media (min-width: 767px)
+    @for $i from 1 through $grid-columns
+        .col-#{$i}
+            width: 100% / $grid-columns * $i
+
+@media (max-width: 767px)
+    @for $i from 1 through $grid-columns
+        .col-s-#{$i}
+            width: 100% / $grid-columns * $i

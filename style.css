@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+/* Variables */
+/* Main code */
+* {
+  box-sizing: border-box; }
+
+.row:before, .row:after {
+  content: "";
+  display: table; }
+.row:after {
+  clear: both; }
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 0px; }
+
+.hero p {
+  text-align: center; }
+
+/* RWD */
+@media (min-width: 767px) {
+  .col-1 {
+    width: 8.3333333333%; }
+
+  .col-2 {
+    width: 16.6666666667%; }
+
+  .col-3 {
+    width: 25%; }
+
+  .col-4 {
+    width: 33.3333333333%; }
+
+  .col-5 {
+    width: 41.6666666667%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.3333333333%; }
+
+  .col-8 {
+    width: 66.6666666667%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.3333333333%; }
+
+  .col-11 {
+    width: 91.6666666667%; }
+
+  .col-12 {
+    width: 100%; } }
+@media (max-width: 767px) {
+  .col-s-1 {
+    width: 8.3333333333%; }
+
+  .col-s-2 {
+    width: 16.6666666667%; }
+
+  .col-s-3 {
+    width: 25%; }
+
+  .col-s-4 {
+    width: 33.3333333333%; }
+
+  .col-s-5 {
+    width: 41.6666666667%; }
+
+  .col-s-6 {
+    width: 50%; }
+
+  .col-s-7 {
+    width: 58.3333333333%; }
+
+  .col-s-8 {
+    width: 66.6666666667%; }
+
+  .col-s-9 {
+    width: 75%; }
+
+  .col-s-10 {
+    width: 83.3333333333%; }
+
+  .col-s-11 {
+    width: 91.6666666667%; }
+
+  .col-s-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
